@@ -17,8 +17,8 @@ basis_set = 'sto-3g'
 hamilt_filename = f'graphene_co2_{nx}_{ny}_{basis_set}_LARGE'
 save_filename = f'graphene_co2_{nx}_{ny}_{basis_set}_LARGE'
 
-l_nl = [4,5,6]
-l_nh = [4,5,6]
+l_nl = [4]
+l_nh = [4]
 
 l_d_graph_co2 = [3.0]                            ## Test
 
@@ -26,10 +26,7 @@ print(f'\n########## MOLECULE : Graphene ({nx},{ny}) + CO2  ##########\n')
 
 for nb_homo, nb_lumo in zip(l_nh, l_nl):
     print(f'\n----- {nb_homo} HOMO - {nb_lumo} LUMO -----')
-    
-    if 2*(nb_homo+nb_lumo) > 16:                   ## 02/09/2024
-        break
-    
+       
     for i_co2, d_graph_co2 in enumerate(l_d_graph_co2):
         print(f'- - - - {i_co2+1}/{len(l_d_graph_co2)} - - - -')
         
