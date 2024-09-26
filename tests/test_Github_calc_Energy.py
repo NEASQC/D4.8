@@ -4,9 +4,11 @@
 import numpy as np
 import pickle
 
+import sys
+sys.path.insert(1,'D4.8/lib')
 
-from Github_calc_Hamilt import graphene_co2_dist
-from Github_calc_Energy import save_E_into_dict
+from lib.Github_calc_Hamilt import graphene_co2_dist
+from lib.Github_calc_Energy import save_E_into_dict
 
 
 #############################################################
