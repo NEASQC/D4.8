@@ -19,8 +19,8 @@ basis_set = 'sto-3g'
 hamilt_filename = f'graphene_co2_{nx}_{ny}_{basis_set}_LARGE.H.pickle'
 save_filename = f'graphene_co2_{nx}_{ny}_{basis_set}_LARGE'
 
-l_nl = [4,5,6]
-l_nh = [4,5,6]
+l_nl = [4]
+l_nh = [4]
 
 l_d_graph_co2 = [3.0]                            ## Test
 
