@@ -4,7 +4,10 @@
 import numpy as np
 import pickle
 
-from Github_calc_Hamilt import save_H_into_dict, graphene_co2_dist
+import sys
+sys.path.insert(1,'D4.8/lib')
+
+from lib.Github_calc_Hamilt import save_H_into_dict, graphene_co2_dist
     
     
 ############################################################
